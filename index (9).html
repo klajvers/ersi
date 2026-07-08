@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>HidroIzolime Tatoshaj | Hidroizolime Profesionale me Membranë PVC</title>
+<meta name="description" content="HidroIzolime Tatoshaj – hidroizolim profesional për tarraca, themele dhe pallate. Materiale të certifikuara PVC, garanci deri në 20 vjet.">
+<link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<style>
+  :root{
+    --bg: #10141a;
+    --surface: #171d24;
+    --surface-2: #1e262e;
+    --slate: #38495a;
+    --membrane: #cfd7db;
+    --paper: #eeece4;
+    --accent: #2fb6c4;
+    --accent-dim: #1d7e88;
+    --warn: #d6672f;
+    --text-dim: #93a3ad;
+    --font-display: 'Big Shoulders Display', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--paper);
+    font-family:var(--font-body);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
+  ::selection{background:var(--accent); color:#08181a;}
+  .seam{width:100%; height:26px; display:block;}
+  .seam svg{width:100%; height:100%; display:block;}
+.variant-photo{
+    margin:-32px -28px 22px;
+    height:auto;
+}
+.variant-photo img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    display:block;
+}
+  .topbar{
+    background:#0a0d10;
+    border-bottom:1px solid rgba(255,255,255,0.06);
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:.03em;
+    color:var(--text-dim);
+  }
+  .topbar .wrap{display:flex; justify-content:space-between; align-items:center; height:36px; gap:12px;}
+  .topbar a.phone{color:var(--accent); font-weight:500; white-space:nowrap;}
+  .topbar .exp-tag{color:var(--warn);}
+  header.site{
+    position:sticky; top:0; z-index:50;
+    background:rgba(16,20,26,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(255,255,255,0.07);
+  }
+  .nav-row{display:flex; align-items:center; justify-content:space-between; height:76px;}
+  .brand{font-family:var(--font-display); font-weight:800; font-size:26px; letter-spacing:.01em; display:flex; align-items:center; gap:10px;}
+  .brand .mark{
+    width:14px; height:14px;
+    background:var(--accent);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  }
+  .brand small{display:block; font-family:var(--font-mono); font-size:10px; font-weight:400; color:var(--text-dim); letter-spacing:.12em; text-transform:uppercase;}
+  nav.links{display:flex; gap:34px; font-size:14.5px; font-weight:500;}
+  nav.links a{color:var(--membrane); position:relative; padding:6px 0; transition:color .2s ease;}
+  nav.links a::after{
+    content:""; position:absolute; left:0; bottom:0; width:0; height:2px;
+    background:var(--accent); border-radius:2px;
+    transition:width .25s ease;
+  }
+  nav.links a:hover{color:var(--accent);}
+  nav.links a:hover::after{width:100%;}
+  .cta-btn{
+    font-family:var(--font-mono);
+    font-size:13px; font-weight:500;
+    background:var(--accent);
+    color:#06181a;
+    padding:11px 20px;
+    border-radius:2px;
+    display:inline-flex; align-items:center; gap:8px;
+    transition:background .15s ease, transform .15s ease;
+  }
+  .cta-btn:hover{background:#3fd0e0; transform:translateY(-1px);}
+  .brand img{height:49px; width:49px; object-fit:cover; border-radius:50%; display:block;}
+  .menu-toggle{
+    display:none; background:none; border:none; width:44px; height:44px;
+    flex-direction:column; justify-content:center; align-items:center; gap:5px; cursor:pointer;
+  }
+  .menu-toggle span{width:22px; height:2px; background:var(--paper); display:block; transition:transform .2s ease, opacity .2s ease;}
+  .menu-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .menu-toggle.open span:nth-child(2){opacity:0;}
+  .menu-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.foto{
+    width: 1080px;
+    height: 1080px;
+    object-fit: cover;
+}
+  .hero{
+    position:relative;
+    padding:96px 0 84px;
+    background:
+      radial-gradient(ellipse 900px 500px at 85% -10%, rgba(47,182,196,0.14), transparent 60%),
+      linear-gradient(180deg, #0d1116 0%, #10141a 100%);
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image: repeating-linear-gradient(115deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 46px);
+    pointer-events:none;
+  }
+  .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:56px; align-items:center; position:relative;}
+  .eyebrow{
+    font-family:var(--font-mono); font-size:12.5px; color:var(--accent);
+    letter-spacing:.14em; text-transform:uppercase; margin-bottom:18px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{content:""; width:26px; height:1px; background:var(--accent);}
+  .hero h1{
+    font-family:var(--font-display); font-weight:900;
+    font-size:clamp(38px, 8vw, 74px);
+    line-height:.98; letter-spacing:-.01em;
+    text-transform:uppercase;
+  }
+  .hero h1 span{color:var(--accent);}
+  .hero p.lead{margin-top:22px; font-size:18px; color:var(--membrane); max-width:520px;}
+  .hero-ctas{display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;}
+  .ghost-btn{
+    border:1px solid rgba(255,255,255,0.18);
+    padding:11px 20px; border-radius:2px; font-size:14.5px; font-weight:500;
+    color:var(--paper);
+  }
+  .ghost-btn:hover{border-color:var(--accent); color:var(--accent);}
+  .hero-stats{display:flex; gap:34px; margin-top:52px; flex-wrap:wrap;}
+  .stat b{display:block; font-family:var(--font-display); font-weight:800; font-size:34px; color:var(--paper);}
+  .stat span{font-family:var(--font-mono); font-size:11.5px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.08em;}
+  .hero-visual{
+    position:relative; aspect-ratio:4/5; border-radius:4px; overflow:hidden;
+    background:linear-gradient(160deg, #1c2530, #0d1116 70%);
+    border:1px solid rgba(255,255,255,0.08);
+  }
+  .hero-visual .video-slot{
+    position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+    flex-direction:column; gap:14px; text-align:center; padding:30px;
+  }
+  .hero-visual .video-slot .ring{
+    width:64px; height:64px; border-radius:50%; border:1.5px dashed var(--accent);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .hero-visual .video-slot p{font-family:var(--font-mono); font-size:12px; color:var(--text-dim); max-width:230px;}
+  .hero-visual .seam-lines{position:absolute; inset:0; opacity:.5;}
+  .hero-visual video{width:100%; height:100%; object-fit:cover; display:block;}
+  .video-overlay{
+    position:absolute; inset:0; display:flex; flex-direction:column; justify-content:space-between;
+    padding:18px; pointer-events:none;
+    background:linear-gradient(180deg, rgba(8,12,16,0.55) 0%, transparent 22%, transparent 60%, rgba(6,10,14,0.88) 100%);
+  }
+  .video-top-badge{
+    align-self:flex-start;
+    background:rgba(8,15,18,0.75); border:1px solid rgba(47,182,196,0.4);
+    color:var(--accent); font-family:var(--font-mono); font-size:11px; text-transform:uppercase;
+    letter-spacing:.06em; padding:6px 12px; border-radius:20px; backdrop-filter:blur(4px);
+  }
+  .video-caption h3{
+    font-family:var(--font-display); font-weight:800; text-transform:uppercase;
+    font-size:clamp(20px,2.6vw,26px); color:var(--paper); line-height:1.05; letter-spacing:.005em;
+  }
+  .video-caption h3 span{color:var(--accent);}
+  .video-location{
+    display:flex; align-items:center; gap:7px; margin-top:10px;
+    font-family:var(--font-mono); font-size:12px; color:var(--membrane);
+  }
+  .video-location svg{width:14px; height:14px; color:var(--accent); flex-shrink:0;}
+  section{padding:92px 0;}
+  .section-head{max-width:640px; margin-bottom:52px;}
+  .section-head .eyebrow{margin-bottom:14px;}
+  .section-head h2{
+    font-family:var(--font-display); font-weight:800; text-transform:uppercase;
+    font-size:clamp(28px,3.6vw,42px); line-height:1.02; letter-spacing:-.01em;
+  }
+  .section-head p{margin-top:16px; color:var(--text-dim); font-size:16px;}
+  .about{background:var(--surface);}
+  .triptych{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.07);}
+  .triptych div{background:var(--surface); padding:34px 30px;}
+  .triptych h3{font-family:var(--font-display); font-weight:700; font-size:22px; margin-bottom:12px; color:var(--accent); text-transform:uppercase;}
+  .triptych p{color:var(--membrane); font-size:15px;}
+  .icon-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px;}
+  .icon-card{
+    background:var(--surface-2); border:1px solid rgba(255,255,255,0.06);
+    padding:30px 22px; border-radius:3px; transition:border-color .15s ease, transform .15s ease;
+  }
+  .icon-card:hover{border-color:var(--accent); transform:translateY(-3px);}
+  .icon-card img{margin-bottom:20px; border-radius:2px;}
+  .icon-card .glyph{width:46px; height:46px; margin-bottom:20px;}
+  .icon-card h4{font-family:var(--font-display); font-weight:700; font-size:19px; text-transform:uppercase; letter-spacing:.01em; margin-bottom:8px;}
+  .icon-card p{font-size:13.5px; color:var(--text-dim);}
+  .certs{background:linear-gradient(180deg, var(--surface), var(--bg));}
+  .cert-row{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:rgba(255,255,255,0.08);}
+  .cert-card{background:var(--bg); padding:38px; display:flex; gap:26px;}
+  .cert-visual{flex-shrink:0; width:88px; height:88px;}
+  .cert-visual svg, .cert-visual img{width:100%; height:100%; object-fit:contain;}
+  .cert-tag{
+    display:inline-block; font-family:var(--font-mono); font-size:11px; color:var(--accent);
+    letter-spacing:.08em; text-transform:uppercase; margin-bottom:8px;
+  }
+  .cert-card h4{font-family:var(--font-display); font-size:20px; font-weight:700; text-transform:uppercase; margin-bottom:8px;}
+  .cert-card p{font-size:14.5px; color:var(--text-dim);}
+  .services-detail{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .svc-card{
+    background:var(--surface-2); border:1px solid rgba(255,255,255,0.06); border-radius:3px; overflow:hidden;
+    display:flex; flex-direction:column;
+  }
+  .svc-img{height:170px; position:relative; background:linear-gradient(135deg, var(--slate), var(--surface)); display:flex;}
+  .svc-img.photo-split{gap:2px;}
+  .svc-img.photo-split img{width:50%; height:100%; object-fit:cover; display:block;}
+  .svc-img.photo-single img{width:100%; height:100%; object-fit:cover; display:block;}
+  .svc-img.photo-contain{background:#0c1115;}
+  .svc-img.photo-contain img{object-fit:contain;}
+  .svc-img::after{
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background:linear-gradient(0deg, rgba(6,10,14,0.55) 0%, transparent 45%);
+  }
+  .svc-img .tag{
+    position:absolute; bottom:12px; left:14px; font-family:var(--font-mono); font-size:10.5px;
+    color:var(--accent); text-transform:uppercase; letter-spacing:.1em; background:rgba(8,15,18,.7);
+    padding:4px 8px; border-radius:2px; z-index:1;
+  }
+  .svc-body{padding:24px 24px 26px; flex:1; display:flex; flex-direction:column;}
+  .svc-body h3{font-family:var(--font-display); font-weight:700; font-size:21px; text-transform:uppercase; margin-bottom:10px;}
+  .svc-body p{font-size:14px; color:var(--text-dim); flex:1;}
+  .svc-body a.link{
+    margin-top:18px; font-family:var(--font-mono); font-size:12.5px; color:var(--accent);
+    display:inline-flex; align-items:center; gap:6px; padding:6px 0;
+  }
+  .svc-body a.link:hover{color:#5fe0ee;}
+  .variants{background:var(--surface);}
+  .variant-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  .variant-card{
+    background:var(--bg); border:1px solid rgba(255,255,255,0.08); padding:32px 28px; border-radius:3px;
+    position:relative; overflow:hidden;
+  }
+  .variant-card.featured{border-color:var(--accent); box-shadow:0 0 0 1px var(--accent) inset;}
+  .variant-card .badge{
+    position:absolute; top:12px; right:12px; left:auto; z-index:2; background:var(--accent); color:#06181a;
+    font-family:var(--font-mono); font-size:11px; padding:4px 10px; border-radius:2px; text-transform:uppercase; letter-spacing:.06em;
+  }
+  .variant-card .thick{font-family:var(--font-mono); color:var(--text-dim); font-size:13px; margin-bottom:6px;}
+  .variant-card h3{font-family:var(--font-display); font-weight:800; font-size:26px; text-transform:uppercase; margin-bottom:14px;}
+  .variant-card ul{list-style:none; margin:18px 0 22px;}
+  .variant-card li{font-size:14px; color:var(--membrane); padding:8px 0; border-top:1px solid rgba(255,255,255,0.07); display:flex; gap:10px;}
+  .variant-card li:first-child{border-top:none;}
+  .variant-card li::before{content:"—"; color:var(--accent);}
+  .variant-card .warranty{font-family:var(--font-mono); font-size:13px; color:var(--accent); margin-bottom:18px;}
+  .process{background:var(--bg);}
+  .process-row{display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative;}
+  .process-step{padding:0 20px; position:relative;}
+  .process-step .num{font-family:var(--font-mono); color:var(--accent); font-size:12px; margin-bottom:14px; display:block;}
+  .process-step h4{font-family:var(--font-display); font-weight:700; font-size:19px; text-transform:uppercase; margin-bottom:8px;}
+  .process-step p{font-size:13.5px; color:var(--text-dim);}
+  .contact{
+    background:
+      radial-gradient(ellipse 800px 450px at 15% 0%, rgba(47,182,196,0.12), transparent 60%),
+      var(--surface);
+    position:relative;
+  }
+  .contact-head{margin-bottom:44px;}
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start;}
+  .contact-cards{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  .contact-card{
+    background:var(--surface-2); border:1px solid rgba(255,255,255,0.08); border-radius:4px;
+    padding:22px 20px; display:flex; align-items:center; gap:14px;
+    transition:transform .16s ease, border-color .16s ease, background .16s ease;
+    position:relative; overflow:hidden;
+  }
+  .contact-card:not(.static):hover{transform:translateY(-4px); border-color:var(--accent);}
+  .contact-card.featured{background:var(--accent); border-color:var(--accent);}
+  .contact-card.featured .cc-icon, .contact-card.featured .cc-lbl, .contact-card.featured .cc-val, .contact-card.featured .cc-arrow{color:#06181a;}
+  .contact-card.featured .cc-icon{background:rgba(6,24,26,0.15);}
+  .contact-card.featured:hover{background:#3fd0e0; transform:translateY(-4px) scale(1.01);}
+  .cc-icon{
+    flex-shrink:0; width:42px; height:42px; border-radius:50%;
+    background:rgba(47,182,196,0.12); color:var(--accent);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .cc-icon svg{width:20px; height:20px;}
+  .cc-text{display:flex; flex-direction:column; gap:2px; min-width:0;}
+  .cc-lbl{font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--text-dim);}
+  .contact-card.featured .cc-lbl{color:rgba(6,24,26,0.7);}
+  .cc-val{font-size:14.5px; font-weight:600; color:var(--paper); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .cc-arrow{margin-left:auto; color:var(--text-dim); font-size:16px; transition:transform .16s ease;}
+  .contact-card:not(.static):hover .cc-arrow{transform:translateX(3px); color:var(--accent);}
+  .contact-card.featured:hover .cc-arrow{color:#06181a;}
+  .contact-card.static{cursor:default;}
+  form.contact-form{background:var(--bg); border:1px solid rgba(255,255,255,0.08); padding:32px; border-radius:3px;}
+  .field{margin-bottom:18px; position:relative;}
+  .field label{display:block; font-family:var(--font-mono); font-size:11.5px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px; transition:color .15s ease;}
+  .field input, .field textarea{
+    width:100%; background:var(--surface-2); border:1px solid rgba(255,255,255,0.1); color:var(--paper);
+    padding:12px 14px; font-family:var(--font-body); font-size:16px; border-radius:2px;
+    border-left:2px solid rgba(255,255,255,0.1);
+    transition:border-color .15s ease, box-shadow .15s ease;
+  }
+  .field input:focus, .field textarea:focus{
+    outline:none; border-color:var(--accent); border-left-color:var(--accent);
+    box-shadow:0 0 0 3px rgba(47,182,196,0.12);
+  }
+  .field:focus-within label{color:var(--accent);}
+  .field textarea{resize:vertical; min-height:100px;}
+  .char-count{position:absolute; bottom:-19px; right:2px; font-family:var(--font-mono); font-size:10.5px; color:var(--text-dim);}
+  .submit-btn{
+    width:100%; background:var(--accent); color:#06181a; border:none; padding:15px;
+    font-family:var(--font-mono); font-size:14px; text-transform:uppercase; letter-spacing:.06em;
+    border-radius:2px; cursor:pointer; font-weight:500; margin-top:6px;
+    transition:background .15s ease, transform .1s ease;
+  }
+  .submit-btn:hover{background:#3fd0e0;}
+  .submit-btn:active{transform:scale(0.98);}
+  .submit-btn.sent{background:#3bd671;}
+  .form-note{font-size:12px; color:var(--text-dim); margin-top:12px; font-family:var(--font-mono);}
+  .final-cta{
+    background:
+      radial-gradient(ellipse 700px 400px at 50% 0%, rgba(47,182,196,0.14), transparent 65%),
+      var(--bg);
+    text-align:center;
+    padding:88px 0;
+  }
+  .final-cta-inner h2{
+    font-family:var(--font-display); font-weight:900; text-transform:uppercase;
+    font-size:clamp(30px,4.4vw,48px); letter-spacing:-.01em; margin-bottom:16px;
+  }
+  .final-cta-inner p{color:var(--text-dim); font-size:16px; margin-bottom:32px;}
+  .wa-big-btn{
+    display:inline-flex; align-items:center; gap:12px;
+    background:var(--accent); color:#06181a; font-weight:600;
+    font-family:var(--font-mono); font-size:15px; text-transform:uppercase; letter-spacing:.03em;
+    padding:18px 34px; border-radius:3px; transition:background .15s ease, transform .15s ease;
+  }
+  .wa-big-btn:hover{background:#3fd0e0; transform:translateY(-2px);}
+  footer{background:#0a0d10; padding:56px 0 28px; border-top:1px solid rgba(255,255,255,0.07);}
+  .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; margin-bottom:44px;}
+  .footer-brand p{color:var(--text-dim); font-size:14px; margin-top:14px; max-width:280px;}
+  footer h5{font-family:var(--font-mono); font-size:12px; color:var(--accent); text-transform:uppercase; letter-spacing:.08em; margin-bottom:16px;}
+  footer ul{list-style:none;}
+  footer li{margin-bottom:10px; font-size:14px; color:var(--membrane);}
+  footer li a{display:inline-block; padding:4px 0;}
+  footer li a:hover{color:var(--accent);}
+  .footer-bottom{
+    display:flex; justify-content:space-between; padding-top:24px; border-top:1px solid rgba(255,255,255,0.06);
+    font-size:12.5px; color:var(--text-dim); font-family:var(--font-mono); flex-wrap:wrap; gap:10px;
+  }
+  .float-wa{
+    position:fixed; bottom:24px; right:24px; z-index:60;
+    background:#25D366; color:#fff; width:56px; height:56px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center; box-shadow:0 8px 24px rgba(0,0,0,0.4);
+    transition:background .15s ease, transform .15s ease;
+  }
+  .float-wa:hover{background:#22c05e; transform:translateY(-2px);}
+
+  /* ============================================================
+     MOBILE OPTIMIZATION
+     ============================================================ */
+
+  /* Tablets and small laptops */
+  @media (max-width: 880px){
+    .hero-grid{grid-template-columns:1fr; gap:40px;}
+    .hero{padding:56px 0 48px;}
+    .hero-visual{aspect-ratio:4/3; order:-1;}
+    .hero-stats{gap:26px; margin-top:38px;}
+    section{padding:64px 0;}
+    .section-head{margin-bottom:36px;}
+    .triptych{grid-template-columns:1fr;}
+    .icon-grid{grid-template-columns:repeat(2,1fr);}
+    .cert-row{grid-template-columns:1fr;}
+    .cert-card{padding:28px;}
+    .services-detail{grid-template-columns:1fr;}
+    .variant-grid{grid-template-columns:1fr;}
+    .process-row{grid-template-columns:repeat(2,1fr); row-gap:36px;}
+    .contact-grid{grid-template-columns:1fr; gap:32px;}
+    .contact-cards{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr; gap:28px;}
+    nav.links{
+      display:flex; position:absolute; top:100%; left:0; right:0;
+      background:#0d1116; border-bottom:1px solid rgba(255,255,255,0.08);
+      flex-direction:column; gap:0; padding:8px 24px 16px;
+      transform:translateY(-8px); opacity:0; pointer-events:none;
+      transition:transform .18s ease, opacity .18s ease;
+      max-height:calc(100vh - 76px); overflow-y:auto;
+    }
+    nav.links.open{transform:translateY(0); opacity:1; pointer-events:auto;}
+    nav.links a{padding:16px 0; border-bottom:1px solid rgba(255,255,255,0.06); font-size:16px;}
+    .menu-toggle{display:flex;}
+    .nav-row .cta-btn{display:none;}
+  }
+
+  /* Phones */
+  @media (max-width: 640px){
+    .wrap{padding:0 18px;}
+    .topbar{font-size:11px;}
+    .topbar .wrap{height:auto; padding-top:6px; padding-bottom:6px; flex-wrap:wrap; row-gap:2px;}
+    .nav-row{height:68px;}
+    .brand img{height:40px; width:40px;}
+    .hero{padding:40px 0 40px;}
+    .hero h1{font-size:clamp(32px, 9.5vw, 48px); line-height:1.02;}
+    .hero p.lead{font-size:16px; margin-top:16px;}
+    .hero-ctas{margin-top:24px; gap:10px;}
+    .hero-ctas a{flex:1 1 auto; text-align:center; justify-content:center;}
+    .hero-stats{margin-top:32px; gap:20px 28px;}
+    .stat b{font-size:28px;}
+    .stat span{font-size:10.5px;}
+    section{padding:48px 0;}
+    .section-head{margin-bottom:28px;}
+    .section-head h2{font-size:clamp(24px,7vw,32px);}
+    .section-head p{font-size:15px;}
+    .triptych div{padding:26px 22px;}
+    .icon-grid{grid-template-columns:1fr; gap:14px;}
+    .icon-card{padding:24px 20px;}
+    .cert-card{flex-direction:column; padding:24px; gap:16px;}
+    .cert-visual{width:64px; height:64px;}
+    .svc-img{height:190px;}
+    .process-row{grid-template-columns:1fr; row-gap:28px;}
+    .process-step{padding:0;}
+    .contact-form{padding:24px 20px;}
+    .final-cta{padding:56px 0;}
+    .wa-big-btn{width:100%; justify-content:center; padding:16px 24px;}
+    footer{padding:40px 0 24px;}
+    .footer-bottom{flex-direction:column; align-items:flex-start;}
+    .float-wa{width:52px; height:52px; bottom:18px; right:18px;}
+    .video-caption h3{font-size:19px;}
+  }
+
+  /* Small phones */
+  @media (max-width: 400px){
+    .hero-stats{flex-direction:column; gap:14px;}
+    .stat{display:flex; align-items:baseline; gap:8px;}
+    .stat b{font-size:24px;}
+    .cc-val{white-space:normal;}
+    .variant-card{padding:26px 20px;}
+    .variant-card h3{font-size:22px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Shqipëri · <span class="exp-tag">30+ vite përvojë</span></span>
+    <a class="phone" href="tel:+355689004999">📞 +355 68 900 4999</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a href="#" class="brand">
+      <img src="assets/logo.jpeg" alt="HidroIzolime Tatoshaj">
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="#sherbimet">Shërbimet</a>
+      <a href="#certifikimet">Certifikimet</a>
+      <a href="#variantet">Variantet</a>
+      <a href="#procesi">Procesi</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="cta-btn" href="https://wa.me/355689004999?text=Pershendetje!%20Jam%20i%20interesuar%20per%20sherbimet%20tuaja%20te%20hidroizolimit." target="_blank" rel="noopener">Na Shkruaj →</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Hap menunë" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Hidroizolim me membranë PVC</div>
+      <h1>Mbrojmë çdo <span>sipërfaqe</span> nga uji, që nga themeli.</h1>
+      <p class="lead">HidroIzolime Tatoshaj sjell teknologji dhe materiale të certifikuara evropiane për tarraca, themele dhe objekte industriale — me garanci reale, jo premtime.</p>
+      <div class="hero-ctas">
+        <a class="cta-btn" href="https://wa.me/355689004999?text=Pershendetje!%20Jam%20i%20interesuar%20per%20nje%20oferte%20hidroizolimi." target="_blank" rel="noopener">Kërko Ofertë</a>
+        <a class="ghost-btn" href="#sherbimet">Shiko Shërbimet</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>15+</b><span>Vite Përvojë</span></div>
+        <div class="stat"><b>300+</b><span>Projekte të Realizuara</span></div>
+        <div class="stat"><b>20 Vjet</b><span>Garanci Maksimale</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <video src="assets/hero-video.mp4" autoplay muted loop playsinline></video>
+      <div class="video-overlay">
+        <div class="video-top-badge">✓ Projekt i Realizuar</div>
+        <div class="video-caption">
+          <h3>Hidroizolim i Megateg <span>— Tiranë</span></h3>
+          <div class="video-location">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Megateg, Tiranë, Shqipëri</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="seam" aria-hidden="true">
+  <svg viewBox="0 0 1200 26" preserveAspectRatio="none"><polyline points="0,13 40,4 80,22 120,4 160,22 200,4 240,22 280,4 320,22 360,4 400,22 440,4 480,22 520,4 560,22 600,4 640,22 680,4 720,22 760,4 800,22 840,4 880,22 920,4 960,22 1000,4 1040,22 1080,4 1120,22 1160,4 1200,13" fill="none" stroke="#2fb6c4" stroke-width="1.5" opacity="0.55"/></svg>
+</div>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Kush Jemi</div>
+      <h2>15 Vite Përkushtim ndaj Cilësisë dhe Perfeksionit</h2>
+      <p>Themeluar në Shqipëri, HidroIzolime Tatoshaj është sot një pikë reference për besueshmëri dhe teknologji të avancuar në fushën e hidroizolimeve me membranë PVC.</p>
+    </div>
+    <div class="triptych">
+      <div>
+        <h3>Ekspertiza Jonë</h3>
+        <p>Ekipe të certifikuara që aplikojnë membranë PVC me saldim me ajër të nxehtë — teknika që garanton izolim hermetik pa asnjë ndërprerje në tegel.</p>
+      </div>
+      <div>
+        <h3>Qëllimi Ynë</h3>
+        <p>Të mbrojmë çdo investim — banesë, depo uji apo objekt industrial — nga uji dhe lagështira, me materiale dhe metoda afatgjata.</p>
+      </div>
+      <div>
+        <h3>Garancia Jonë</h3>
+        <p>Çdo tarracë, themel apo depo uji e izoluar nga ne shoqërohet me garanci me shkrim — jo vetëm fjalë, por përgjegjësi reale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="seam" aria-hidden="true">
+  <svg viewBox="0 0 1200 26" preserveAspectRatio="none"><polyline points="0,13 40,4 80,22 120,4 160,22 200,4 240,22 280,4 320,22 360,4 400,22 440,4 480,22 520,4 560,22 600,4 640,22 680,4 720,22 760,4 800,22 840,4 880,22 920,4 960,22 1000,4 1040,22 1080,4 1120,22 1160,4 1200,13" fill="none" stroke="#38495a" stroke-width="1.5" opacity="0.8"/></svg>
+</div>
+
+<!-- SERVICES ICON GRID -->
+<section id="sherbimet">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Fushat e Aplikimit</div>
+      <h2>Hidroizolime në të Gjithë Shqipërinë dhe Ballkanin</h2>
+    </div>
+    <div class="icon-grid">
+      <div class="icon-card">
+        <img src="assets/riparim.jpg" alt="Membranë PVC">
+        <h4>Membranë PVC</h4>
+        <p>Rripa PVC të saldueshëm, rezistentë ndaj UV dhe temperaturave ekstreme.</p>
+      </div>
+      <div class="icon-card">
+        <img src="assets/fotodepouji1.jpg" alt="Hidroizolim Depo Uji">
+        <h4>Hidroizolim Depo Uji</h4>
+        <p>Izolim hermetik për rezervuarë dhe depo uji, pa rrjedhje afatgjata.</p>
+      </div>
+      <div class="icon-card">
+        <img src="assets/foto3.jpeg" alt="Hidroizolim Depo Uji">
+        <h4>Hidroizolim Tarrace</h4>
+        <p>Mbrojtje e plotë e çative të sheshta nga depërtimi i ujërave të shiut.</p>
+      </div>
+      <div class="icon-card">
+        <img src="assets/foto4.jpeg" alt="Hidroizolim Depo Uji">
+        <h4>Hidroizolim Pallatesh</h4>
+        <p>Zgjidhje për tarraca kolektive, kate parkimi dhe fasada nën tokë.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="seam" aria-hidden="true">
+  <svg viewBox="0 0 1200 26" preserveAspectRatio="none"><polyline points="0,13 40,4 80,22 120,4 160,22 200,4 240,22 280,4 320,22 360,4 400,22 440,4 480,22 520,4 560,22 600,4 640,22 680,4 720,22 760,4 800,22 840,4 880,22 920,4 960,22 1000,4 1040,22 1080,4 1120,22 1160,4 1200,13" fill="none" stroke="#2fb6c4" stroke-width="1.5" opacity="0.55"/></svg>
+</div>
+
+<!-- CERTIFICATIONS -->
+<section id="certifikimet" class="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Standarde &amp; Besueshmëri</div>
+      <h2>Certifikimet Tona</h2>
+    </div>
+    <div class="cert-row">
+      <div class="cert-card">
+        <div class="cert-visual">
+         <img src="assets/what-is-iso-9001-compliance.jpg" alt="ISO 9001">
+        </div>
+        <div>
+          <span class="cert-tag">ISO 9001</span>
+          <h4>Quality Management System</h4>
+          <p>Certifikim ndërkombëtar që garanton menaxhim cilësor në çdo fazë të punës — standard i domosdoshëm për projekte të mëdha dhe bashkëpunime serioze.</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-visual">
+          <img src="assets/pngtree-iso-14001-certified-company-logo-badge-png-image_8540372.png" alt="ISO 14001">
+        </div>
+        <div>
+          <span class="cert-tag">ISO 14001</span>
+          <h4>Environmental Management System</h4>
+          <p>Certifikim që vërteton angazhimin ndaj mjedisit, me materiale dhe procese me ndikim të reduktuar ekologjik.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES DETAILED -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Katalogu i Shërbimeve</div>
+      <h2>Shërbimet Tona</h2>
+      <p>Nga projektimi deri te zbatimi final — çdo hap kryhet nga ekipi ynë i certifikuar.</p>
+    </div>
+    <div class="services-detail">
+      <div class="svc-card">
+        <div class="svc-img photo-single">
+          <img src="assets/foto2.jpeg" alt="Saldimi i membranës PVC në kantier">
+          <span class="tag">PVC · Çati</span>
+        </div>
+        <div class="svc-body">
+          <h3>Membranë PVC</h3>
+          <p>Zgjidhje profesionale për çati, terasa, themele dhe objekte industriale me materiale të certifikuara PVC.</p>
+          <a class="link" href="https://wa.me/355689004999?text=Pershendetje!%20Jam%20i%20interesuar%20per%20hidroizolim%20me%20membrane%20PVC." target="_blank" rel="noopener">Na Kontakto →</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img photo-single">
+          <img src="assets/foto3.jpeg" alt="Hidroizolim tarrace nën qiell të kthjellët">
+          <span class="tag">Tarrace</span>
+        </div>
+        <div class="svc-body">
+          <h3>Hidroizolim Tarracash</h3>
+          <p>Parandalim i depërtimit të ujit dhe dëmtimeve strukturore në hapësirat e jashtme.</p>
+          <a class="link" href="https://wa.me/355689004999?text=Pershendetje!%20Jam%20i%20interesuar%20per%20hidroizolim%20tarrace." target="_blank" rel="noopener">Na Kontakto →</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img photo-single">
+          <img src="hidroizolimthemelesh.jpg" alt="Hidroizolim Themelesh">
+          <span class="tag">Themele</span>
+        </div>
+        <div class="svc-body">
+          <h3>Hidroizolim Themelesh</h3>
+          <p>Siguri maksimale ndaj ujërave nëntokësore dhe lagështirës së tepërt.</p>
+          <a class="link" href="https://wa.me/355689004999?text=Pershendetje!%20Jam%20i%20interesuar%20per%20hidroizolim%20themelesh." target="_blank" rel="noopener">Na Kontakto →</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img photo-single">
+          <img src="assets/depo.jpg" alt="Depo & Rezervuarë Uji">
+          <span class="tag">Depo Uji</span>
+        </div>
+        <div class="svc-body">
+          <h3>Depo &amp; Rezervuarë Uji</h3>
+          <p>Izolim i plotë dhe i qëndrueshëm për rezervuarë dhe struktura që mbajnë ujë.</p>
+          <a class="link" href="https://wa.me/355689004999?text=Pershendetje!%20Jam%20i%20interesuar%20per%20hidroizolim%20depoje%20uji." target="_blank" rel="noopener">Na Kontakto →</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img photo-single">
+          <img src="assets/konsulenceteknike.jpg" alt="Konsulencë Teknike">
+          <span class="tag">Projektim</span>
+        </div>
+        <div class="svc-body">
+          <h3>Konsulencë Teknike</h3>
+          <p>Analizë profesionale dhe zgjidhje të personalizuara për çdo lloj projekti.</p>
+          <a class="link" href="https://wa.me/355689004999?text=Pershendetje!%20Kam%20nevoje%20per%20konsulence%20teknike%20per%20hidroizolim." target="_blank" rel="noopener">Na Kontakto →</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img photo-single photo-contain">
+          <img src="assets/riparimrrjeshjesh.jpg" alt="Riparim Rrjedhjesh">
+          <span class="tag">Riparime</span>
+        </div>
+        <div class="svc-body">
+          <h3>Riparim Rrjedhjesh</h3>
+          <p>Diagnostikim dhe ndërhyrje e shpejtë për rrjedhje ekzistuese, pa prishur strukturën.</p>
+          <a class="link" href="https://wa.me/355689004999?text=Pershendetje!%20Kam%20nje%20rrjedhje%20uji%20qe%20duhet%20riparuar." target="_blank" rel="noopener">Na Kontakto →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="seam" aria-hidden="true">
+  <svg viewBox="0 0 1200 26" preserveAspectRatio="none"><polyline points="0,13 40,4 80,22 120,4 160,22 200,4 240,22 280,4 320,22 360,4 400,22 440,4 480,22 520,4 560,22 600,4 640,22 680,4 720,22 760,4 800,22 840,4 880,22 920,4 960,22 1000,4 1040,22 1080,4 1120,22 1160,4 1200,13" fill="none" stroke="#38495a" stroke-width="1.5" opacity="0.8"/></svg>
+</div>
+
+<!-- VARIANTS / PRICING -->
+<section id="variantet" class="variants">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Materialet</div>
+      <h2>Variantet Tona për Hidroizolim</h2>
+      <p>Zgjidh trashësinë sipas nevojës dhe buxhetit — çdo variant vjen me garanci të shkruar.</p>
+    </div>
+    <div class="variant-grid">
+      <div class="variant-card">
+        <div class="variant-photo"><img src="assets/pvc1_5.png" alt="Trashësia e membranës PVC 1.5mm"></div>
+        <div class="thick">PVC · 1.5mm</div>
+        <h3>Ekonomik</h3>
+        <div class="warranty">Garanci 10 Vjeçare</div>
+        <ul>
+          <li>Çmimi më i lirë në treg</li>
+          <li>I përballueshëm për projekte të vogla</li>
+          <li>Qëndrueshmëri solide</li>
+        </ul>
+        <a class="ghost-btn" style="display:block; text-align:center;" href="https://wa.me/355689004999?text=Pershendetje!%20Jam%20i%20interesuar%20per%20variantin%20ekonomik%20PVC%201.5mm." target="_blank" rel="noopener">Kërko Ofertë</a>
+      </div>
+      <div class="variant-card featured">
+        <span class="badge">Më i Zgjedhur</span>
+        <div class="variant-photo"><img src="assets/pvc1_8.png" alt="Trashësia e membranës PVC 1.8mm"></div>
+        <div class="thick">PVC · 1.8mm</div>
+        <h3>Premium</h3>
+        <div class="warranty">Garanci 15 Vjeçare</div>
+        <ul>
+          <li>Izolim hermetik për tarracë e themel</li>
+          <li>Balancë e mirë çmim–cilësi</li>
+          <li>I rekomanduar për shtëpi private</li>
+        </ul>
+        <a class="cta-btn" style="display:block; text-align:center;" href="https://wa.me/355689004999?text=Pershendetje!%20Jam%20i%20interesuar%20per%20variantin%20premium%20PVC%201.8mm." target="_blank" rel="noopener">Kërko Ofertë</a>
+      </div>
+      <div class="variant-card">
+        <div class="variant-photo"><img src="assets/pvc2_0.png" alt="Trashësia e membranës PVC 2.0mm"></div>
+        <div class="thick">PVC · 2.0mm</div>
+        <h3>Superior</h3>
+        <div class="warranty">Garanci 20 Vjeçare</div>
+        <ul>
+          <li>Izolim efikas për depo uji dhe rezervuarë</li>
+          <li>Investim afatgjatë i sigurt</li>
+          <li>Rezistencë maksimale ndaj presionit</li>
+        </ul>
+        <a class="ghost-btn" style="display:block; text-align:center;" href="https://wa.me/355689004999?text=Pershendetje!%20Jam%20i%20interesuar%20per%20variantin%20superior%20PVC%202.0mm." target="_blank" rel="noopener">Kërko Ofertë</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="procesi" class="process">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Si Punojmë</div>
+      <h2>Nga Vlerësimi te Saldimi Final</h2>
+    </div>
+    <div class="process-row">
+      <div class="process-step">
+        <span class="num">01 / VLERËSIM</span>
+        <h4>Inspektim në Vend</h4>
+        <p>Vizitojmë objektin dhe matim sipërfaqen, pjerrësinë dhe pikat kritike.</p>
+      </div>
+      <div class="process-step">
+        <span class="num">02 / OFERTË</span>
+        <h4>Propozim Teknik</h4>
+        <p>Rekomandojmë trashësinë e duhur të materialit dhe kohën e zbatimit.</p>
+      </div>
+      <div class="process-step">
+        <span class="num">03 / ZBATIM</span>
+        <h4>Saldim me Ajër të Nxehtë</h4>
+        <p>Rripat PVC vendosen dhe saldohen tegel më tegel, pa asnjë hapësirë të pambuluar.</p>
+      </div>
+      <div class="process-step">
+        <span class="num">04 / KONTROLL</span>
+        <h4>Testim &amp; Garanci</h4>
+        <p>Kontrollojmë çdo tegel dhe dorëzojmë garancinë e shkruar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="seam" aria-hidden="true">
+  <svg viewBox="0 0 1200 26" preserveAspectRatio="none"><polyline points="0,13 40,4 80,22 120,4 160,22 200,4 240,22 280,4 320,22 360,4 400,22 440,4 480,22 520,4 560,22 600,4 640,22 680,4 720,22 760,4 800,22 840,4 880,22 920,4 960,22 1000,4 1040,22 1080,4 1120,22 1160,4 1200,13" fill="none" stroke="#2fb6c4" stroke-width="1.5" opacity="0.55"/></svg>
+</div>
+
+<!-- CONTACT -->
+<section id="kontakt" class="contact">
+  <div class="wrap">
+    <div class="section-head contact-head">
+      <div class="eyebrow">Kontakt</div>
+      <h2>Le ta Fillojmë Projektin</h2>
+      <p>Zgjidh mënyrën më të lehtë për ty — na thirr, na shkruaj në WhatsApp, ose plotëso formularin poshtë.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-cards">
+          <a class="contact-card" href="tel:+355689004999">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <span class="cc-text"><span class="cc-lbl">Telefon</span><span class="cc-val">+355 68 900 4999</span></span>
+            <span class="cc-arrow">→</span>
+          </a>
+          <a class="contact-card featured" href="https://wa.me/355689004999?text=Pershendetje!%20Jam%20i%20interesuar%20per%20sherbimet%20tuaja%20te%20hidroizolimit." target="_blank" rel="noopener">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+            <span class="cc-text"><span class="cc-lbl">WhatsApp</span><span class="cc-val">Bisedo me ne Direkt</span></span>
+            <span class="cc-arrow">→</span>
+          </a>
+          <a class="contact-card" href="https://mail.google.com/mail/?view=cm&fs=1&to=hidroizolimetatoshaj@gmail.com&su=Kerkese%20per%20Hidroizolim" target="_blank" rel="noopener">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 6l9 7 9-7"/><rect x="3" y="5" width="18" height="14" rx="1"/></svg></span>
+            <span class="cc-text"><span class="cc-lbl">Email</span><span class="cc-val">hidroizolimetatoshaj@gmail.com</span></span>
+            <span class="cc-arrow">→</span>
+          </a>
+          <div class="contact-card static">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span class="cc-text"><span class="cc-lbl">Zona e Shërbimit</span><span class="cc-val">Gjithë Shqipëria</span></span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="field">
+          <label for="name">Emri</label>
+          <input type="text" id="name" name="from_name" placeholder="Emri e Mbiemri" required>
+        </div>
+        <div class="field">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="reply_to" placeholder="email@shembull.com" required>
+        </div>
+        <div class="field">
+          <label for="tel">Numri i Telefonit</label>
+          <input type="tel" id="tel" name="phone" placeholder="+355 6X XXX XXXX">
+        </div>
+        <div class="field">
+          <label for="msg">Mesazhi</label>
+          <textarea id="msg" name="message" maxlength="400" placeholder="Përshkruani projektin tuaj..."></textarea>
+          <span class="char-count"><span id="charNum">0</span>/400</span>
+        </div>
+        <button class="submit-btn" type="submit" id="submitBtn">Dërgo Mesazhin</button>
+        <p class="form-note">* Formulari dërgon email real pasi të vendosësh kodet e EmailJS (shiko udhëzimet në kodin JS).</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap final-cta-inner">
+    <h2>Gati ta Mbrosh Objektin nga Uji?</h2>
+    <p>Na shkruaj tani në WhatsApp dhe merr një vlerësim falas brenda ditës.</p>
+    <a class="wa-big-btn" href="https://wa.me/355689004999?text=Pershendetje!%20Jam%20i%20interesuar%20per%20sherbimet%20tuaja%20te%20hidroizolimit." target="_blank" rel="noopener">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#06181a" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      Na Shkruaj në WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand"><img src="assets/logo.jpeg" alt="HidroIzolime Tatoshaj"></a>
+        <p>Hidroizolim profesional me membranë PVC për tarraca, themele dhe pallate — kudo në Shqipëri.</p>
+      </div>
+      <div>
+        <h5>Shërbimet</h5>
+        <ul>
+          <li><a href="#sherbimet">Membranë PVC</a></li>
+          <li><a href="#sherbimet">Hidroizolim Tarrace</a></li>
+          <li><a href="#sherbimet">Hidroizolim Depo Uji</a></li>
+          <li><a href="#sherbimet">Hidroizolim Themelesh</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Kompania</h5>
+        <ul>
+          <li><a href="#certifikimet">Certifikimet</a></li>
+          <li><a href="#variantet">Variantet</a></li>
+          <li><a href="#procesi">Procesi</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 HidroIzolime Tatoshaj. Të gjitha të drejtat e rezervuara.</span>
+      <span>Bërë me kujdes për tarraca që nuk rrjedhin.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/355689004999?text=Pershendetje!%20Jam%20i%20interesuar%20per%20sherbimet%20tuaja%20te%20hidroizolimit." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 32 32" fill="#ffffff"><path d="M16.04 4C9.66 4 4.5 9.16 4.5 15.54c0 2.28.65 4.4 1.78 6.2L4 28l6.42-2.24a11.5 11.5 0 0 0 5.62 1.44h.01c6.38 0 11.54-5.16 11.54-11.54C27.59 9.34 22.42 4.18 16.04 4Zm6.78 16.5c-.29.81-1.43 1.54-1.98 1.62-.5.08-1.13.11-1.83-.12-.42-.14-.96-.31-1.65-.6-2.9-1.26-4.79-4.2-4.94-4.4-.14-.19-1.18-1.57-1.18-3 0-1.42.74-2.11 1-2.4.27-.29.58-.36.77-.36.2 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2 .89 2.14.07.15.12.32.02.51-.1.19-.15.31-.29.48l-.44.5c-.15.15-.3.31-.13.6.17.29 1.86 3.24 4 4.53.66.4 1.05.36 1.43.22.38-.14 1.36-.7 1.55-1.05.19-.29.38-.24.65-.14.27.1 2.14.98 2.5 1.17.36.19.6.28.69.44.09.15.09.87-.2 1.71Z"/></svg>
+</a>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    menuToggle.classList.toggle('open', isOpen);
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });  const msgField = document.getElementById('msg');
+  const charNum = document.getElementById('charNum');
+  if (msgField) {
+    msgField.addEventListener('input', () => {
+      charNum.textContent = msgField.value.length;
+    });
+  }
+  // ============================================================
+  // LIDHJA ME EMAILJS — ZËVENDËSO 3 VLERAT POSHTË ME TË TUAJAT
+  // Krijo llogari falas në https://www.emailjs.com
+  // 1) Shto "Email Service" (Gmail/Outlook) → merr SERVICE_ID
+  // 2) Krijo "Email Template" me fushat {{from_name}} {{reply_to}} {{phone}} {{message}} → merr TEMPLATE_ID
+  // 3) Nga "Account" → "General" merr PUBLIC_KEY
+  // ============================================================
+  const EMAILJS_SERVICE_ID  = "service_8vpuy1i";
+  const EMAILJS_TEMPLATE_ID = "template_um8plh8";
+  const EMAILJS_PUBLIC_KEY  = "Rslnc0lLcGC76dHmn";
+
+  if (window.emailjs) {
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  }
+
+  const contactForm = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Duke Dërguar...';
+
+      emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, contactForm)
+        .then(() => {
+          submitBtn.textContent = '✓ Mesazhi u Dërgua';
+          submitBtn.classList.add('sent');
+          contactForm.reset();
+          charNum.textContent = '0';
+          setTimeout(() => {
+            submitBtn.textContent = 'Dërgo Mesazhin';
+            submitBtn.classList.remove('sent');
+            submitBtn.disabled = false;
+          }, 2600);
+        })
+        .catch((err) => {
+          console.error('EmailJS error:', err);
+          submitBtn.textContent = 'Gabim — Provo Përsëri';
+          submitBtn.disabled = false;
+          setTimeout(() => { submitBtn.textContent = 'Dërgo Mesazhin'; }, 2600);
+        });
+    });
+  }
+</script>
+</body>
+</html>
